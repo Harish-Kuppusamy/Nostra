@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.navbar{
+
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+
+
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}.navbar-links{
+
+    display: flex;
+    gap: 20px;
+
+}
+
+.navbar-links a{
+
+    text-decoration: none;
+    color: #1d231d;
+}
+
+.navbar-links a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+.navbar-menu-toggle{
+    display: none;
+}
+
+
+
+/*snavbar
+*/
+
+
+.side-navbar{
+
+    background-color: #1d231d;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 1.5s;
+  
+}
+
+.side-navbar-link{
+    margin-bottom:30px;
+
+}
+
+
+.side-navbar-link a{
+    color: white;
+    text-decoration: none;
+}
+
+.side-navbar-link a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    align-items: center;
+}
+
+.header-btn{
+padding: 10px 20px;
+margin-top: 10px;
+color: white;
+cursor: pointer;
+background-color: #1d231d;
+border-radius: 5px;
+
+}
+
+.service{
+
+padding: 20px;
+}
+.service-container-1{
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+
+}
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+
+.service-container-2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f2f4f7;
+    border-radius: 5px;
+}
+
+
+
+
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ 
+}
+
+
+.new-arrival-container{
+
+
+    position: relative;
+   flex-basis: 15%;
+    margin: 13px;
+
+}
+
+.new-arrival-container button{
+    padding: 5% 10%;
+    border-radius: 5px;
+    color: #1d231d;
+    margin-top: 10px;
+    position: absolute;
+    width: 130px;
+   
+    left: 35px;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+.new-arrival-container img{
+    height: 300px;
+    border-radius: 10px;
+}
+#newa{
+    padding: 20px;
+}
+
+
+.news{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
+gap: 15px;
+margin-top: 10px;
+
+}
+
+.news input{
+    padding: 11px;
+    width: 80vw;
+    border: solid black 2px;
+
+}
+
+.news button{
+
+    background-color: #1d231d;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.footer{
+margin-top: 20px;
+padding: 40px;
+background-color: #1d231d;
+color: white;
+
+}
+
+.footer-container{
+    display: flex;
+    gap: 40px;
+    margin: 15px;
+    align-items: center;
+    justify-content: left;
+}
+.footer-icon-container{
+
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    gap: 8px;
+}
+.products-box img{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    
+}
+
+.products-box{
+    flex-basis: 20%;
+    margin: 10px auto;
+}
+.products{
+
+
+display: flex;
+flex-wrap: wrap;
+
+gap: 15px;
+}
+
+.products-box p{
+    text-align: left;
+    padding-left: 15px;
+}
+
+.product-search{
+width: 100%;
+padding: 10px 150px;
+position: relative;
+
+}
+.product-search input{
+    width: 70%;
+    margin: 5px auto;
+    
+    font-size: 28px;
+    border-radius: 8px;
+    padding: 8px;
+}
+#aa{
+  display: none;
+}
+
+/* mq navbar*/
+
+@media screen and (max-width:700px){
+
+    .navbar-menu-toggle{
+        display: block;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+.header img{
+    display: none;
+}
+.service-container-1{
+    display: none;
+}
+.service-container-2{
+    flex-direction: column;
+}
+#newa{
+    text-align: center;
+}
+.footer-box-1 p{
+ display: none;
+}
+.footer-icon-container i{
+
+margin: 3px;
+}
+
+.product-search input{
+    width: 100%;
+    margin: 0;
+    padding: 4px;
+    font-size: 20px;
+ 
+}
+
+.product-search{
+width: 30%;
+
+
+
+}
+
+}
