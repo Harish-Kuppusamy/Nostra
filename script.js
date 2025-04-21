@@ -1,4 +1,29 @@
+// for show side nav
+
+
+
+var snav = document.querySelector(".side-navbar")
+
+function shownav() {
+  snav.style.left = "0"
+
+}
+
+
+function closenav() {
+  snav.style.left = "-60%"
+}
+
+function closepop() {
+  document.querySelector(".add").style.display = "none";
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
+
+
+
+
   /* for slider */
   const btnLeft = document.querySelector(".btnlf");
   const btnRight = document.querySelector(".btnrt");
