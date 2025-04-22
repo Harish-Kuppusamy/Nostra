@@ -9,6 +9,7 @@ body{
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
+  background-color: white;
 
 }
 
@@ -321,68 +322,9 @@ color: white;
    justify-content: center;
     gap: 8px;
 }
- .products-box img {
-      width: 200px;
-      height: 300px;
-      border-radius: 10px;
-    }
 
-    .products-box {
-      flex-basis: 20%;
-      margin: 10px auto;
-    }
-
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .products-box p {
-      text-align: left;
-      padding-left: 15px;
-    }
-
-    .product-search {
-      width: 100%;
-      padding: 10px 150px;
-      position: relative;
-    }
-
-    .product-search input {
-      width: 70%;
-      margin: 5px auto;
-      font-size: 28px;
-      border-radius: 8px;
-      padding: 8px;
-    }
-
-    #aa {
-      display: none;
-    }
-
-    .filter-section {
-      padding: 20px 150px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .filter-section h3 {
-      width: 100%;
-      margin-top: 10px;
-    }
-
-    .filter-section label {
-      margin-right: 20px;
-      font-size: 18px;
-    }
   
-
-
-
-
-
+/*collection page css */
 
 
 
@@ -432,19 +374,10 @@ color: white;
 margin: 3px;
 }
 
-.product-search input{
-    width: 100%;
-    margin: 0;
-    padding: 4px;
-    font-size: 20px;
+
  
 }
 
-.product-search{
-width: 30%;
 
 
 
-}
-
-}
