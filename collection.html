@@ -23,8 +23,8 @@
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
         text-align: center;
-        margin: 0;
-        padding: 20px;
+        margin: 5px auto;
+       
       }
 
 
@@ -115,9 +115,16 @@ margin-top: 3px;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
       }
       .filter-buttons {
-        margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+
+      gap: 10px;
+        flex: 1;
+        border-radius: 6px;
+        padding: 5px;
       }
       .filter-buttons button {
         margin: 5px;
@@ -136,6 +143,7 @@ margin-top: 3px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        flex: 4;
       }
       .product {
         display: inline-block;
@@ -200,7 +208,10 @@ color: white;
     .navbar-links{
         display: none;
     }
-
+.container{
+  flex-direction: column;
+  gap: 10px;
+}
 #newa{
     text-align: center;
 }
@@ -211,6 +222,8 @@ color: white;
 
 margin: 3px;
 }
+
+
 
 
  
@@ -287,8 +300,9 @@ margin: 3px;
 
 
     <div class="container">
-      <h2>Product Filter</h2>
+      
       <div class="filter-buttons">
+        <h2 >Product Filter</h2>
         <button onclick="filterProducts('all')">All</button>
         <button onclick="filterProducts('shirts')">Shirts</button>
         <button onclick="filterProducts('trousers')">Trousers</button>
@@ -324,6 +338,18 @@ margin: 3px;
           <img src="img 1 (8).jpg" />
           <div class="product-name">Denim Trousers</div>
         </div>
+
+<div class="product" data-category="shirts">
+          <img src="img 1 (2).jpg" />
+          <div class="product-name">white Shirt</div>
+        </div>
+
+
+        <div class="product" data-category="t-shirts">
+          <img src="img 1 (14).jpg" />
+          <div class="product-name">Funcky</div>
+        </div>
+
       </div>
     </div>
 

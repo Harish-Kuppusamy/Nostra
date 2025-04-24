@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nostra</title>
 
-    <link rel="stylesheet" href="styles.css">
+   
 
     <!--g font link-->
 
@@ -15,6 +15,195 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+<style>
+
+
+  body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+        margin: 5px auto;
+       
+      }
+
+
+
+
+.navbar{
+
+margin-top: 3px;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+
+
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}.navbar-links{
+
+    display: flex;
+    gap: 20px;
+
+}
+
+.navbar-links a{
+
+    text-decoration: none;
+    color: #1d231d;
+}
+
+.navbar-links a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+.navbar-menu-toggle{
+    display: none;
+}
+
+
+
+/*snavbar
+*/
+
+
+.side-navbar{
+
+    background-color: #1d231d;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 1.5s;
+    z-index: 1;
+  
+}
+
+.side-navbar-link{
+    margin-bottom:30px;
+
+}
+
+
+.side-navbar-link a{
+    color: white;
+    text-decoration: none;
+}
+
+.side-navbar-link a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+form{
+    background-color: #1d231d;
+
+    color: white;
+    width: 40%;
+    margin: 15px auto;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+ 
+}
+
+input, textarea{
+
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+table{
+    margin: 5px auto;
+}
+
+td{
+    padding: 8px;
+}
+
+.footer{
+margin-top: 20px;
+padding: 40px;
+background-color: #1d231d;
+color: white;
+
+}
+
+.footer-container{
+    display: flex;
+    gap: 40px;
+    margin: 15px;
+    align-items: center;
+    justify-content: left;
+}
+.footer-icon-container{
+
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    gap: 8px;
+}
+
+
+
+
+
+@media screen and (max-width:700px){
+
+    .navbar-menu-toggle{
+        display: block;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+
+
+    form{
+        width: 80%;
+    }
+#newa{
+    text-align: center;
+}
+.footer-box-1 p{
+ display: none;
+}
+.footer-icon-container i{
+
+margin: 3px;
+}
+
+
+
+
+ 
+}
+
+
+</style>
+
 
 </head>
 <body>
@@ -72,9 +261,53 @@
 </div>
 
 
+<div style="text-align: center;">
+<h2>Nostra</h2>
+<p>"Nostra — Where Trends Begin."</p>
+</div>
 
 
-<h1 style="text-align: center; margin: 20px; font-style: italic;">Thanks For Contacting Us!</h1>
+
+<form action="javascript:void(0)">
+
+
+<table>
+
+
+<tr>
+<td>Name:</td> <td><input type="text" placeholder="Your Name"></td>
+
+
+</tr>
+
+
+<tr>
+<td>Email:</td> <td><input type="email" placeholder="Your Email"></td>
+
+
+</tr>
+
+
+<tr>
+
+<td>
+Any Queries: 
+
+</td>
+
+<td>
+<textarea name="" id="">           </textarea>
+
+</td>
+
+</tr>
+</table>
+
+
+
+
+</form>
+
 
 
 
@@ -110,7 +343,7 @@
 </div>
 
 
-<p>@Copy All Rights Reserved! 2025-Nostra</p>
+<p style="text-align: left;">@Copy All Rights Reserved! 2025-Nostra</p>
 </div>
 
 </body>
