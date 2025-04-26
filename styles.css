@@ -236,9 +236,12 @@ align-items: center;
    overflow-x: auto;
    white-space: nowrap;
    gap: 20px;
-
+height: fit-content;
 }
 
+.new-arrival::-webkit-scrollbar{
+    width: 0;
+}
 
 
 .new-arrival-container{
